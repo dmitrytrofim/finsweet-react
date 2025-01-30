@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+@theme {
+ --font-sans: '', 'sans-serif';
+
+ --text-16: 16px;
+
+ --color-t-000: #000;
+ --color-t-fff: #fff;
+ --color-b-000: #000;
+ --color-b-fff: #fff;
+ --color-trp: transparent;
+
+ --font-300: 300;
+ --font-400: 400;
+ --font-500: 500;
+ --font-600: 600;
+ --font-700: 700;
+ --font-800: 800;
+ --font-900: 900;
+
+ --leading-n: normal;
+}
+
+/* @media screen and (max-width: 1024px) {
+ :root {
+  --text-16: 50px;
+ }
+} */
+
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+/* @font-face {
+ font-family: '';
+ font-style: normal;
+ font-weight: 00;
+ font-display: swap;
+ src: url('../../fonts') format('woff2');
+} */
+
+@layer base {
+ ::-webkit-scrollbar-button {
+  @apply w-[6px] h-0;
+ }
+ ::-webkit-scrollbar-track {
+  @apply bg-[var(--color-b-fff)] shadow-[0px_0px_3px_var(--color-b-fff)_inset];
+ }
+ ::-webkit-scrollbar-thumb {
+  @apply rounded-[2px] bg-[var(--color-b-000)];
+ }
+ ::-webkit-resizer {
+  @apply w-[7px] h-0;
+ }
+ ::-webkit-scrollbar {
+  @apply w-[7px];
+ }
+ body {
+  @apply font-400 text-16 leading-n text-[var(--color-t-000)] bg-[var(--color-b-fff)];
+ }
+ body.j-lock {
+  overflow: hidden;
+ }
+ input,
+ select,
+ button,
+ textarea {
+  outline: none;
+ }
+}
+@layer components {
+ .i-wrap {
+  @apply relative flex;
+ }
+ .i-full {
+  @apply absolute top-0 left-0 w-full h-full object-cover object-center;
+ }
+}
