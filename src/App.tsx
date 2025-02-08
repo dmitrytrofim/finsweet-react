@@ -1,16 +1,14 @@
-import TheWrapper from '@/layouts/TheWrapper';
-import Header from '@/layouts/TheHeader';
-import Footer from '@/layouts/TheFooter';
+import TheWrapper from '@/containers/TheWrapper';
+import Header from '@/containers/TheHeader';
+import Footer from '@/containers/TheFooter';
 
 function App() {
  return (
   <>
    <TheWrapper>
-    <Header />
-    <main>
-     <div className="text-[red]">test</div>
-    </main>
-    <Footer />
+     <Header />
+     <main>test</main>
+     <Footer />
    </TheWrapper>
   </>
  );

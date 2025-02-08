@@ -1,4 +1,4 @@
-import Container from '@/components/Container';
+import Container from '@/containers/Container';
 
 function Footer() {
  return (

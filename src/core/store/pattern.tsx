@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { MyCounter } from '~/modules';
+import { MyCounter } from '@/core/types/';
 
 const useStore = create<MyCounter>((set) => ({
  counter: 0,
