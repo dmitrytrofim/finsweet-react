@@ -1,16 +1,16 @@
-import TheWrapper from '@/containers/TheWrapper';
-import Header from '@/containers/TheHeader';
-import Footer from '@/containers/TheFooter';
+import Layout from '@/components/Layout';
+import Homepage from '@/pages/Homepage';
+import Blogpage from '@/pages/Blogpage';
+import { Routes, Route } from 'react-router';
 
 function App() {
  return (
-  <>
-   <TheWrapper>
-     <Header />
-     <main>test</main>
-     <Footer />
-   </TheWrapper>
-  </>
+  <Routes>
+   <Route path="/" element={<Layout />}>
+    <Route index element={<Homepage />} />
+    <Route path="blog" element={<Blogpage />} />
+   </Route>
+  </Routes>
  );
 }
 

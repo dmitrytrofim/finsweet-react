@@ -1,5 +1,6 @@
 import Container from '@/containers/Container';
 import logo from '@/assets/img/svg/logo.svg';
+import { NavLink } from 'react-router';
 
 function Header() {
  return (
@@ -12,14 +13,10 @@ function Header() {
      <nav className="ml-auto">
       <ul className="flex items-center gap-[24px]">
        <li className="">
-        <a href="#" className="">
-         Home
-        </a>
+        <NavLink to="/">Home</NavLink>
        </li>
        <li className="">
-        <a href="#" className="">
-         Blog
-        </a>
+        <NavLink to="/blog">Blog</NavLink>
        </li>
        <li className="">
         <a href="#" className="">

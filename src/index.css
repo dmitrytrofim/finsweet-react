@@ -1,5 +1,5 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
+@import 'tailwindcss';
 
 @theme {
  --font-sen: 'Sen', serif;
@@ -81,7 +81,7 @@
   @apply w-[7px];
  }
  body {
-  @apply font-400 text-16 leading-n text-t-black bg-b-light;
+  @apply font-inter font-400 text-16 leading-n text-t-black bg-b-light;
  }
  body.j-lock {
   overflow: hidden;

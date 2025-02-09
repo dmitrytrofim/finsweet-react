@@ -1,6 +1,6 @@
 function Container({
  children,
- cls = 'max-w-[1200px]',
+ cls = 'max-w-[1300px]',
 }: {
  children: React.ReactNode;
  cls?: string;
