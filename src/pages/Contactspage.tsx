@@ -1,15 +1,15 @@
 import Container from '@/containers/Container';
 
-function Blogpage() {
+function Contactspage() {
  return (
   <>
    <section className="">
     <Container>
-     <div className="">Blog</div>
+     <div className="">Contacts</div>
     </Container>
    </section>
   </>
  );
 }
 
-export default Blogpage;
+export default Contactspage;
