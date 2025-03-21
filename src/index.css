@@ -5,11 +5,25 @@
 
  --text-16: 16px;
 
- --color-t-000: #000;
- --color-t-fff: #fff;
+ --color-t-black: #232536;
+ --color-t-yellow: #ffd050;
+ --color-t-dark-grey: #4c4c4c;
+ --color-t-medium-grey: #6d6e76;
+ --color-t-purple: #592ea9;
+ --color-t-light: #fff;
+ --color-t-light-yellow: #fbf6ea;
+ --color-t-light-grey: #f4f4f4;
+ --color-t-lavender: #f4f0f8;
 
- --color-b-000: #000;
- --color-b-fff: #fff;
+ --color-b-black: #232536;
+ --color-b-yellow: #ffd050;
+ --color-b-dark-grey: #4c4c4c;
+ --color-b-medium-grey: #6d6e76;
+ --color-b-purple: #592ea9;
+ --color-b-light: #fff;
+ --color-b-light-yellow: #fbf6ea;
+ --color-b-light-grey: #f4f4f4;
+ --color-b-lavender: #f4f0f8;
 
  --color-trp: transparent;
 
@@ -45,10 +59,10 @@
   @apply w-[6px] h-0;
  }
  ::-webkit-scrollbar-track {
-  @apply bg-b-fff shadow-[0px_0px_3px_var(--color-b-fff)_inset];
+  @apply bg-b-light shadow-[0px_0px_3px_var(--color-b-light)_inset];
  }
  ::-webkit-scrollbar-thumb {
-  @apply rounded-[2px] bg-b-000;
+  @apply rounded-[2px] bg-b-light;
  }
  ::-webkit-resizer {
   @apply w-[7px] h-0;
@@ -57,7 +71,7 @@
   @apply w-[7px];
  }
  body {
-  @apply font-400 text-16 leading-n text-t-000 bg-b-fff;
+  @apply font-400 text-16 leading-n text-t-black bg-b-light;
  }
  body.j-lock {
   overflow: hidden;
